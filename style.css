@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto' , sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin: 10px;
+}
+
+.box {
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 12rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    box-shadow: .5rem .7rem .9rem grey;
+    transform: translateX(60rem);
+    transition: transform .6s ease-in;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-60rem);
+}
+
+.box.show {
+    transform: translateX(0);
+}
+
+.box h2 {
+    font-size: 3rem;
+}
